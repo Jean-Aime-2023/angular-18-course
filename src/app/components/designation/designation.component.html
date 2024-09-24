@@ -1,1 +1,20 @@
-<p>designation works!</p>
+<div class="row">
+  @if (isLoader == true) {
+  <div class="col-12">
+    <div class="spinner-border text-info"></div>
+  </div>
+  } @else { @for (item of designationList; track $index) {
+  <div class="col-3">
+    <div class="card">
+      <div class="card-body">
+        <div class="card-title">
+          <h4 class="card-title">{{ item.designation }}</h4>
+          <p class="card-text">Lorem, ipsum dolor sit amet consectetur</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Card link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  } }
+</div>
