@@ -18,4 +18,14 @@ export class RolesComponent {
   currentDate: Date = new Date();
   inputType: string = 'button';
   selectedState: string = '';
+
+  // normal function
+  showWelcomeAlert(){
+    alert("Welcome Aime")
+  }
+
+  //function with paramenters
+  showMessage(message:string){
+     alert(message)
+  }
 }
